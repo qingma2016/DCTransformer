@@ -22,6 +22,7 @@ def input_transform():
 
 def get_patch_training_set(upscale_factor, patch_size):
     root_dir = "/data/CAVEdata12/"
+    # X: HSI, Y: MSI, X_blur: blurred HSI
     train_dir1 = join(root_dir, "train/X")
     train_dir2 = join(root_dir, "train/Y")
     test_dir3 = join(root_dir, "train/X_blur")
